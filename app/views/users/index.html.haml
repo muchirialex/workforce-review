@@ -1,0 +1,40 @@
+%div.wrapper
+	%header.main_header.clearfix
+		= link_to image_tag("icon.svg"), root_path, class: "logo"
+		.logo
+			= link_to root_path do
+				%h1
+					Review
+					%span Peers
+		%nav.main_nav
+			= link_to "Workforce", root_path, class: "current"
+			- Category.all.each do |category|
+				= link_to category.name, users_path(category: category.name)
+				-#= link_to "New Job", new_job_path, class: "new"  
+
+	- @users.each do |user|
+		%ul#timeline
+			= link_to user do
+				%li.listing.clearfix
+					%div.image_wrapper
+						= image_tag user.image.url(:thumb)
+					%div.info
+						%span.user_name= user.name
+						%span.bio_info
+						HWS
+						%span •
+						Kenya
+						%span •
+						HQ Office
+					%span.project_type.ibotta= user.category.name
+
+=will_paginate @users
+%footer#main_footer
+	%p.copyright © 2017 Peer Review App. All Rights Reserved
+	%nav
+		%a{:href => "#"}
+			%i.fa.fa-facebook
+		%a{:href => "#"}
+			%i.fa.fa-twitter
+		%a{:href => "#"}
+			%i.fa.fa-google-plus

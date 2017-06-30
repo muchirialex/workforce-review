@@ -1,0 +1,21 @@
+.single_wrapper
+	= image_tag @user.image.url(:medium)
+	.bio
+		%h3= @user.name
+		.peer_icons
+			%i.fa.fa-phone-square{"aria-hidden" => "true"}
+			%i.fa.fa-envelope{"aria-hidden" => "true"}
+			%i.fa.fa-skype{"aria-hidden" => "true"}
+		%p= @user.bio
+		%br/
+
+		.typeform-share.button
+			%a.typeform-share.button.evaluate{"data-mode" => "popup", :href => "https://alex1631.typeform.com/to/q6SAnI", :target => "_blank"} Evaluate
+		%br/
+
+		= link_to "Home", root_path, id: "links"
+		= link_to "Edit", edit_user_path, id: "links"
+		= link_to "Delete", user_path(@user), method: :delete, data: { confirm: "Are you sure?" }, id: "links"
+
+		:javascript
+			(function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()
