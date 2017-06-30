@@ -1,8 +1,11 @@
 = simple_form_for(@user, html: { class: 'form-horizontal' }) do |f|
-	= f.collection_select :category_id, Category.all, :id, :name, { prompt: "Choose Project" }
-	= f.input :name, label: "Name"
-	= f.input :bio, label: "Bio Info"
-	%br/
-	= f.input :image, as: :file
-	%br/
-	= f.button :submit
+	.skinny_wrapper
+		= f.collection_select :category_id, Category.all, :id, :name, { prompt: "Choose Project" }
+		%br/
+		= f.input :name, label: "Name"
+		%br/
+		= f.input :bio, label: "Bio Info", class: "textarea"
+		%br/
+		= f.input :image, as: :file
+		%br/
+		= f.button :submit, class: "button"

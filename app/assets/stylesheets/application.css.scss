@@ -13,7 +13,7 @@ body {
 	font-family: "Raleway", sans-serif;
 	br {
 		display: block;
-   		margin: 3em 0;
+   		margin: 2em 0;
    		content: " ";
 	}
 }
@@ -242,7 +242,44 @@ body {
 	}
 }
 
+.skinny_wrapper {
+	width: 750px;
+	max-width: 90%;
+	margin: 0 auto;
+}
 
+.title {
+	font-weight: 700;
+	font-size: 1.8em;
+	text-align: center;
+}
+
+input, textarea {
+	width: 100%;
+	max-width: 100%;
+	border: 2px solid $border;
+	padding: .75em;
+	margin: .5em 0 2em 0;
+}
+
+textarea {
+	min-height: 12em;
+}
+
+.button {
+	outline: none;
+	background: transparent;
+	width: 30%;
+	border: 2px solid $border;
+	margin-top: -2em;
+	text-align: center;
+	font-size: 1em;
+	color: $dark;
+	text-decoration: none;
+	&:hover {
+		background-color: $highlight_1;
+	}
+}
 
 
 
