@@ -35,7 +35,6 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'simple_form', '~> 3.5'
 gem 'haml', '~> 5.0', '>= 5.0.1'
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'paperclip', '~> 4.2.1'
 gem 'aws-sdk', '< 2.0'

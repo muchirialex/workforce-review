@@ -39,17 +39,12 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.4)
-    autoprefixer-rails (7.1.1.2)
-      execjs
     aws-sdk (1.67.0)
       aws-sdk-v1 (= 1.67.0)
     aws-sdk-v1 (1.67.0)
       json (~> 1.4)
       nokogiri (~> 1)
     bindex (0.5.0)
-    bootstrap-sass (3.3.7)
-      autoprefixer-rails (>= 5.2.1)
-      sass (>= 3.3.4)
     builder (3.2.3)
     climate_control (0.2.0)
     cocaine (0.5.8)
@@ -177,7 +172,6 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk (< 2.0)
-  bootstrap-sass (~> 3.3, >= 3.3.7)
   byebug
   coffee-rails (~> 4.2)
   haml (~> 5.0, >= 5.0.1)
