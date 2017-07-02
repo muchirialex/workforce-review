@@ -57,7 +57,7 @@ body {
 	}
 }
 
-.menu {
+.bootstrap {
 	display: none;
 }
 
@@ -364,4 +364,102 @@ textarea {
 			}	
 		}
 	} 
+}
+
+
+@media only screen and (max-width: 768px) {
+	.main_header {
+	margin: 3em 0;
+}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	img {
+		float: none;
+	}
+	h1 {
+		float: none;
+		margin: 0;
+		font-size: 1.1em;
+	}
+}
+
+.main_nav {
+	float: none;
+	text-align: center;
+	a {
+		margin: 0 .5em;
+	}
+}
+}
+
+@media only screen and (max-width: 600px) {
+	.main_nav {
+		display: none;
+	}
+	.main_nav.active {
+		display: block;
+		width: 100%;
+		a {
+			display: block;
+			text-decoration: none;
+			margin-left: 1em;
+			margin-top: 4em;
+			color: $secondary;
+			border-bottom: 1px solid $border;
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+		.current {
+			font-weight: 300;
+			color: $secondary;
+		}
+	}
+	.bootstrap {
+		display: block;
+		float: right;
+		i {
+			font-size: 1.5em;
+			color: $main;
+			padding-top: .6em;
+		}
+	}
+
+	.logo {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		img {
+			float: left;
+		}
+		h1 {
+			float: left;
+			margin: 0;
+			font-size: 1.1em;
+		}
+	}
+
+	#timeline {
+		.listing {
+			.image_wrapper {
+				margin-right: 1em;
+				img {
+					width: 50px;
+				}
+			}
+			.info {
+				width: 100%;
+				padding: .4em 0 0 0;
+				.job_title {
+					font-size: 1.25em;
+				}
+			}
+			.job_type {
+				display: none;
+			}
+		}
+	}
 }
