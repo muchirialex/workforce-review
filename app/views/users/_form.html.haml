@@ -1,6 +1,7 @@
 = simple_form_for(@user, html: { class: 'form-horizontal' }) do |f|
 	.skinny_wrapper
-		= f.collection_select :category_id, Category.all, :id, :name, { prompt: "Choose Project" }
+		.dropdown
+			= f.collection_select :category_id, Category.all, :id, :name, { prompt: "Choose Project" }, class: "dropbtn"
 		%br/
 		= f.input :name, label: "Name"
 		%br/
