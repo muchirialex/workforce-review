@@ -57,13 +57,13 @@ body {
 	}
 }
 
-.bootstrap {
+.menu {
 	display: none;
 }
 
 .main_nav {
 	float: right;
-	padding-top: 1.75em;
+	padding-top: 1em;
 	a {
 		text-decoration: none;
 		margin-left: 1em;
@@ -437,7 +437,7 @@ textarea {
 			color: $secondary;
 		}
 	}
-	.bootstrap {
+	.menu {
 		display: block;
 		float: right;
 		i {

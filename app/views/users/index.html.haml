@@ -6,6 +6,8 @@
 				%h1
 					Review
 					%span Peers
+		%a.menu{:href => "#"}
+			%i.fa.fa-bars		
 		%nav.main_nav
 			= link_to "Workforce", root_path, class: "current"
 			- Category.all.each do |category|
