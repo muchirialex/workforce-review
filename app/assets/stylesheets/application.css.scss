@@ -489,11 +489,17 @@ textarea {
 			}
 		}
 	}
+	
 	.single_wrapper {
 		img {
 			width: 200px;
 			border-radius: 50%;
 			margin: 2em 15%;
 		}
+	}
+	
+	.evaluate {
+		padding: .25 .25em;
+		font-size: 1em;
 	}
 }
