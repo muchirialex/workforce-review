@@ -425,7 +425,7 @@ textarea {
 			display: block;
 			text-decoration: none;
 			margin-left: 1em;
-			margin-top: 4em;
+			margin-top: 3em;
 			color: $secondary;
 			border-bottom: 1px solid $border;
 			&:last-child {
@@ -475,6 +475,14 @@ textarea {
 				.user_name {
 					font-size: 1.25em;
 				}
+			}
+			.project_type {
+					font-size: .75em;
+			}
+			.ibotta {
+				&:before {
+					margin-top: -.75em;
+				}	
 			}
 			.bio_info {
 				display: none;
