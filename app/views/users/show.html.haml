@@ -1,5 +1,5 @@
 .single_wrapper
-	= image_tag @user.image.url(:medium)
+	= image_tag @user.image.url(:medium), class: "profile"
 	.bio
 		%h3= @user.name
 		.peer_icons
