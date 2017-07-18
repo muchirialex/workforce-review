@@ -179,7 +179,7 @@ body {
 	img {
 		width: 200px;
 		border-radius: 50%;
-		margin: 0 auto;
+		margin: 2em 37.25%;
 	}
 	.bio {
 		text-align: center;
@@ -489,7 +489,11 @@ textarea {
 			}
 		}
 	}
-	.profile {
-		margin-left: -2em;
+	.single_wrapper {
+		img {
+			width: 200px;
+			border-radius: 50%;
+			margin: 0 auto;
+		}
 	}
 }
