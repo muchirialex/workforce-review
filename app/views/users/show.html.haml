@@ -13,9 +13,9 @@
 			%a.typeform-share.button.evaluate{"data-mode" => "popup", :href => "https://alex1631.typeform.com/to/q6SAnI", :target => "_blank"} Evaluate
 		%br/
 		
-		- if creator_signed_in?
-			#admin_links
-				= link_to "Home", root_path, id: "links"
+		#admin_links
+			= link_to "Home", root_path, id: "links"
+			- if creator_signed_in?
 				= link_to "Edit", edit_user_path, id: "links"
 				= link_to "Delete", user_path(@user), method: :delete, data: { confirm: "Are you sure?" }, id: "links"
 
