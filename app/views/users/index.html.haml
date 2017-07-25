@@ -12,9 +12,9 @@
 			= link_to "Workforce", root_path, class: "current"
 			- Category.all.each do |category|
 				= link_to category.name, users_path(category: category.name)
-				- if creator_signed_in?
-					= link_to "New Job", new_user_path, class: "new"
-					= link_to "Sign Out", destroy_creator_session_path, method: :delete
+			- if creator_signed_in?
+				= link_to "New Job", new_user_path, class: "new"
+				= link_to "Sign Out", destroy_creator_session_path, method: :delete
 
 	- @users.each do |user|
 		%ul#timeline
