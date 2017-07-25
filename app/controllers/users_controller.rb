@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
 	before_action :find_user, only: [:show, :edit, :update, :destroy]
+	before_action :authenticate_creator!, except: [:index, :show]
 	def index
 		if params[:category].blank?
 			@users = User.all.order("created_at DESC").paginate(page: params[:page], per_page: 5)

@@ -38,6 +38,7 @@ gem 'haml', '~> 5.0', '>= 5.0.1'
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'paperclip', '~> 4.2.1'
 gem 'aws-sdk', '< 2.0'
+gem 'devise', '~> 4.3'
 
 group :development do
 	gem 'sqlite3'

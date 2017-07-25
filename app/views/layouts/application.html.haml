@@ -12,7 +12,10 @@
   %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
   %link{:href => "https://www.cloudfactory.com/hs-fs/hub/351374/file-457736618-png/img/favicon.png?t=1500362650098", :rel => "shortcut icon"}/
 
-
+- if notice
+  %p.notice= notice
+- elsif alert
+  %p.alert= alert
 
 %body
   = yield
