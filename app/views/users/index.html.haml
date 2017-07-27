@@ -13,7 +13,7 @@
 			- Category.all.each do |category|
 				= link_to category.name, users_path(category: category.name)
 			- if creator_signed_in?
-				= link_to "New Job", new_user_path, class: "new"
+				= link_to "New User", new_user_path, class: "new"
 				= link_to "Sign Out", destroy_creator_session_path, method: :delete
 
 	- @users.each do |user|
@@ -25,8 +25,9 @@
 					%div.info
 						%span.user_name= user.name
 						%span.bio_info
-						%span •
-						Nairobi, Kenya
+						%div.location
+							%span •
+							Nairobi, Kenya
 					%span.project_type.ibotta= user.category.name
 
 =will_paginate @users
