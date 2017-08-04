@@ -72,7 +72,10 @@ body {
 	}
 	.current {
 		font-weight: 700;
-		color: $main;
+		color: $secondary;
+		&:hover {
+			color: $main;
+		}
 	}
 }
 

@@ -10,7 +10,7 @@
 			%i.fa.fa-bars		
 		%nav.main_nav
 			- Category.all.each do |category|
-				= link_to category.name, users_path(category: category.name)
+				= link_to category.name, users_path(category: category.name), class: "current"
 			- if creator_signed_in?
 				= link_to "New User", new_user_path, class: "new"
 				= link_to "Sign Out", destroy_creator_session_path, method: :delete
