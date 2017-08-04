@@ -133,10 +133,10 @@ body {
 			}
 		}
 		.project_type {
-			text-transform: uppercase;
 			font-weight: 700;
 			font-size: .75em;
 			position: relative;
+			float: left;
 			white-space: nowrap;
 			padding-top: .6em;
 			width: 100px;
