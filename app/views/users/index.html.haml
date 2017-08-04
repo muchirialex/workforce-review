@@ -9,7 +9,6 @@
 		%a.menu{:href => "#"}
 			%i.fa.fa-bars		
 		%nav.main_nav
-			= link_to "Workforce", root_path, class: "current"
 			- Category.all.each do |category|
 				= link_to category.name, users_path(category: category.name)
 			- if creator_signed_in?
