@@ -133,6 +133,7 @@ body {
 			}
 		}
 		.project_type {
+			text-transform: uppercase;
 			font-weight: 700;
 			font-size: .75em;
 			position: relative;
@@ -150,10 +151,28 @@ body {
 				top:  27px;
 			}
 		}
-		.ibotta {
-			color: $main;
+		.p_1 {
+			color: $highlight_1;
 			&:before {
 				background: $highlight_1;
+			}
+		}
+		.p_2 {
+			color: $highlight_2;
+			&:before {
+				background: $highlight_2;
+			}
+		}
+		.p_3 {
+			color: $highlight_3;
+			&:before {
+				background: $highlight_3;
+			}
+		}
+		.p_4 {
+			color: $highlight_4;
+			&:before {
+				background: $highlight_4;
 			}
 		}
 		transition: all .3s ease-in-out;
