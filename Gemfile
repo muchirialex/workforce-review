@@ -39,6 +39,7 @@ gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'paperclip', '~> 4.2.1'
 gem 'aws-sdk', '< 2.0'
 gem 'devise', '~> 4.3'
+gem 'friendly_id', '~> 5.2', '>= 5.2.1'
 
 group :development do
 	gem 'sqlite3'

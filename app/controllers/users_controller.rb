@@ -48,11 +48,11 @@ class UsersController < ApplicationController
 	private 
 
 	def users_params
-		params.require(:user).permit(:name, :bio, :category_id, :category_name, :image)
+		params.require(:user).permit(:name, :bio, :category_id, :category_name, :image, :slug)
 	end
 
 	def find_user
-		@user = User.find(params[:id])
+		@user = User.friendly.find(params[:id])
 	end
 
 
